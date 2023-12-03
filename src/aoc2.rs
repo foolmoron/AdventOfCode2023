@@ -41,7 +41,6 @@ fn calc1() -> i32 {
 }
 
 fn power(line: &str) -> i32 {
-    let re_id = Regex::new(r"Game (\d+):").unwrap();
     let re_red = Regex::new(r"(\d+) red").unwrap();
     let re_green = Regex::new(r"(\d+) green").unwrap();
     let re_blue = Regex::new(r"(\d+) blue").unwrap();
