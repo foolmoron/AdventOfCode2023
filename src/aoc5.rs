@@ -64,8 +64,27 @@ fn calc1() -> i64 {
 }
 
 fn calc2() -> i64 {
-    // oops
-    return 0;
+    let input = parse(INPUT);
+    let mut lowest = i64::MAX;
+    let mut x = 0_i64;
+    for pair in input.seeds.chunks(2) {
+        if let [n_start, n_len] = pair {
+            for n in *n_start..*n_start + *n_len {
+                x += 1;
+                if x % 1_000_000 == 0 {
+                    // println!("-- {} -- ", x);
+                }
+                let mut final_n = n;
+                // println!("start {}", final_n);
+                for maps in &input.map_chain {
+                    final_n = get_mapped(final_n, maps);
+                    // println!("{}", final_n);
+                }
+                lowest = cmp::min(lowest, final_n);
+            }
+        }
+    }
+    return lowest;
 }
 
 pub fn calc() {
