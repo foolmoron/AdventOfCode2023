@@ -1,3 +1,11 @@
+#[derive(Debug)]
+struct Input {
+}
+
+fn parse(str: &str) -> Input {
+    
+}
+
 fn calc1() -> i32 {
     return 0;
 }
