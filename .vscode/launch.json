@@ -15,7 +15,7 @@
                     "${fileDirname}/../Cargo.toml"
                 ]
             },
-            "args": ["5"]
+            "args": ["7"]
         }
     ]
 }
