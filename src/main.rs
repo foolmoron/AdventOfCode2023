@@ -6,7 +6,7 @@ mod aoc5;
 mod aoc6;
 mod aoc7;
 mod aoc8;
-// mod aoc9;
+mod aoc9;
 // mod aoc10;
 // mod aoc11;
 // mod aoc12;
@@ -20,7 +20,7 @@ mod aoc8;
 // mod aoc20;
 // mod aoc21;
 // mod aoc22;
-// mod aoc23;
+mod aoc23;
 // mod aoc24;
 // mod aoc25;
 
@@ -34,7 +34,7 @@ fn main() {
         "6" => aoc6::calc,
         "7" => aoc7::calc,
         "8" => aoc8::calc,
-        // "9" => aoc9::calc,
+        "9" => aoc9::calc,
         // "10" => aoc10::calc,
         // "11" => aoc11::calc,
         // "12" => aoc12::calc,
@@ -48,7 +48,7 @@ fn main() {
         // "20" => aoc20::calc,
         // "21" => aoc21::calc,
         // "22" => aoc22::calc,
-        // "23" => aoc23::calc,
+        "23" => aoc23::calc,
         // "24" => aoc24::calc,
         // "25" => aoc25::calc,
         &_ => todo!(),
