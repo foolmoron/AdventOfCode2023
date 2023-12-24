@@ -21,7 +21,7 @@ mod aoc9;
 // mod aoc21;
 // mod aoc22;
 mod aoc23;
-// mod aoc24;
+mod aoc24;
 // mod aoc25;
 
 fn main() {
@@ -49,7 +49,7 @@ fn main() {
         // "21" => aoc21::calc,
         // "22" => aoc22::calc,
         "23" => aoc23::calc,
-        // "24" => aoc24::calc,
+        "24" => aoc24::calc,
         // "25" => aoc25::calc,
         &_ => todo!(),
     };
