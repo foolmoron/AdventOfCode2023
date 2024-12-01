@@ -1,4 +1,5 @@
-# Advent of Code 2022
+# Advent of Code 2023
+
 Trying Rust this time! All code is in the `src/aoc#.rs` files.
 
 ## Run
